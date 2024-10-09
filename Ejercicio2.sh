@@ -9,7 +9,7 @@ remote=$(git remote)
 if [ -z "$remote" ]: then
    echo "No hay repositorio remoto conectado"
    exit 1
-fi 
+fi
 
 git push origin $(git branch --show-current)
 
